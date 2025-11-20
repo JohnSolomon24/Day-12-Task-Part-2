@@ -1,6 +1,6 @@
 
 body{
-      background-image: url('img4.jpg');
+      background-image: url('img5.jpg');
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
@@ -34,15 +34,19 @@ font-family: Times;
 
 #welcometag{
 
+
+    
       display: flex;
       flex-wrap: nowrap;
-      margin-left: 35px;
-text-align:center;
+      
+        margin-left: 650px;
+
     
-      padding: 20px;
+
+     
 
       -webkit-text-fill-color: transparent;
-      background: linear-gradient(20deg,cyan,magenta);
+      background: linear-gradient(10deg,cyan,magenta);
       -webkit-background-clip: text;
       background-clip: text;
 
@@ -56,11 +60,11 @@ text-align:center;
     
     margin-top: -40px;
 
-      margin-right: 35px;
+    
   
       color: white;
       text-align:center;
-            width:700px;
+           
             padding: 20px;
       
             
@@ -80,6 +84,7 @@ text-align:center;
 
 
 margin-top: 300px;
+
 padding-top: 30px;
 padding-bottom: 30px;
 
@@ -96,7 +101,7 @@ font-size: 50px;
 @keyframes slideInLeft {
 
       from{
-          transform: translateY(-400px);
+          transform: translateX(-500px);
       }
   
   to {
@@ -121,7 +126,7 @@ font-size: 50px;
   @keyframes slideInRight {
 
       from{
-          transform: translateX(-400px);
+          transform: translateX(500px);
       }
   
   to {
