@@ -1,177 +1,78 @@
-
-body{
-      background-image: url('img5.jpg');
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-attachment: fixed;
+body {
+  background-image: url('img5.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
-#btn{
-
-      font-size: 40px;
-
-      padding: 30px;
-
-font-family: Times;
-
-     
-     
-      border: 3px solid;
-      border-radius: 25px;
-
-      transition-property: transform ;
-      transition-duration: 0.3s;
-      transition-timing-function:ease-in-out ;
-      transition-delay: 0;
-
+#btn {
+  font-size: 40px;
+  padding: 30px;
+  font-family: 'Times New Roman', Times, serif;
+  border: 3px solid;
+  border-radius: 25px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
-#btn:hover{
-      transform:translateY(-9px);
-      
+#btn:hover {
+  transform: translateY(-9px);
+  box-shadow: 0 8px 15px rgba(255, 255, 255, 0.3);
+  cursor: pointer;
 }
 
-#welcometag{
-
-
-    
-      display: flex;
-      flex-wrap: nowrap;
-      
-        margin-left: 650px;
-
-    
-
-     
-
-      -webkit-text-fill-color: transparent;
-      background: linear-gradient(10deg,cyan,magenta);
-      -webkit-background-clip: text;
-      background-clip: text;
-
-    color: white;
-    
-    
-}
-
-#entertag{
-
-    
-    margin-top: -40px;
-
-    
-  
-      color: white;
-      text-align:center;
-           
-            padding: 20px;
-      
-            
-            font-family: 'Times New Roman', Times, serif;
-
-}
-.auto{
-
-      font-size: 30px;
-      font-family: "Footlight MT";
-      margin-bottom: 10px;
+#welcomeTag {
+  display: flex;
+  justify-content: center;
 
 }
 
-.card1{
-
-
-
-margin-top: 300px;
-
-padding-top: 30px;
-padding-bottom: 30px;
-
-color: white;
-
-
-font-family: 'Times New Roman', Times, serif;
-font-size: 50px;
-
-
+#enterTag {
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-family: 'Times New Roman', Times, serif;
 }
 
+.auto {
+  font-size: 30px;
+  font-family: "Footlight MT";
+  margin-bottom: 10px;
+  color: aliceblue;
+}
+
+.card1 {
+  margin-top: 15vh;
+  padding: 30px 0;
+  color: white;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 50px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.fadeIn {
+  animation: fadeIn 2s ease-in-out forwards;
+}
 
 @keyframes slideInLeft {
+  from { transform: translateX(-500px); }
+  to { transform: translateX(0); }
+}
 
-      from{
-          transform: translateX(-500px);
-      }
-  
-  to {
-      transform:translateX(0px);
-  }    
-  }
-  
-  .slideInLeft{
-      
-      animation-name: slideInLeft;
-  animation-duration: 2s;
-  animation-timing-function:ease-in-out;
-  animation-delay: 0s;
-  animation-iteration-count: 1;
-  animation-direction: normal;
-  animation-fill-mode: none;
-  
-  }
+.slideInLeft {
+  animation: slideInLeft 2s ease-in-out forwards, fadeIn 2s ease-in-out forwards;
+}
 
+@keyframes slideInRight {
+  from { transform: translateX(500px); }
+  to { transform: translateX(0); }
+}
 
-
-  @keyframes slideInRight {
-
-      from{
-          transform: translateX(500px);
-      }
-  
-  to {
-      transform:translateX(0px);
-  }    
-  }
-  
-  .slideInRight{
-      
-      animation-name: slideInRight;
-  animation-duration: 2s;
-  animation-timing-function:ease-in-out;
-  animation-delay: 0s;
-  animation-iteration-count: 1;
-  animation-direction: normal;
-  animation-fill-mode: none;
-  
-  }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.slideInRight {
+  animation: slideInRight 2s ease-in-out forwards, fadeIn 2s ease-in-out forwards;
+}
