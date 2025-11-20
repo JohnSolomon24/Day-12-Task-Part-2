@@ -191,7 +191,7 @@ animation-fill-mode: none;
     margin-top: 50px;
     border-radius: 25px;
 }
-#btn4,#btn5{
+#btn4,#btn5,#btn6,#btn7{
     font-family:'Times New Roman', Times, serif ;
   
     font-size: 50px;
@@ -394,6 +394,16 @@ font-weight:400;
 }
 
 #btn5:hover{
+    transform:translateY(-9px);
+    
+}
+
+#btn6:hover{
+    transform:translateY(-9px);
+    
+}
+
+#btn7:hover{
     transform:translateY(-9px);
     
 }
